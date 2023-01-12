@@ -7,7 +7,7 @@ const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <section className="bg-[#FDEBEA] w-full h-[815px] pt-8">
+    <section className="bg-[#FDEBEA] w-full pt-8 pb-20">
       <header className=" px-6 md:px-32 bg-[#FDEBEA] rounded-lg sticky top-1  mx-auto flex justify-between items-center">
         <div className="hidden lg:flex  items-center gap-2">
           <img src={logo} alt="logo" />
