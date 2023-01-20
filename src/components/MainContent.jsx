@@ -16,11 +16,11 @@ const MainContent = () => {
             Ability.
           </p>
           <div className="flex rounded-lg overflow-hidden">
-            <input className="border-0 outline-0 pl-6 py-3 pr-3 sm:pr-14 lg:pr-16 xl:pr-52 lg:text-xl" type="text" placeholder="Search Your Favorite Course..." />
+            <input className="border-0 outline-0 text-sm pl-2 xl:pl-6 py-3 pr-3 sm:pr-14 lg:pr-16 xl:pr-52 lg:text-xl" type="text" placeholder="Search Favorite Course..." />
             <img
               src={search}
               alt="search"
-              className="bg-accent rounded-tr-lg rounded-br-lg px-4 py-3 lg:px-5  lg:py-4"
+              className="bg-accent cursor-pointer rounded-tr-lg rounded-br-lg px-4 py-3 lg:px-5  lg:py-4"
             />
           </div>
         </div>
