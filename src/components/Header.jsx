@@ -37,16 +37,36 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="#">Courses</a>
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:text-accent"
+                >
+                  Courses
+                </a>
               </li>
               <li>
-                <a href="#">Articles</a>
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:text-accent"
+                >
+                  Articles
+                </a>
               </li>
               <li>
-                <a href="#">About Us</a>
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:text-accent"
+                >
+                  Stories
+                </a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:text-accent"
+                >
+                  Contact Us
+                </a>
               </li>
             </ul>
           </nav>
@@ -93,16 +113,36 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#">Courses</a>
+              <a
+                href="#"
+                className="transition-all duration-300 hover:text-accent"
+              >
+                Courses
+              </a>
             </li>
             <li>
-              <a href="#">Articles</a>
+              <a
+                href="#"
+                className="transition-all duration-300 hover:text-accent"
+              >
+                Articles
+              </a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a
+                href="#"
+                className="transition-all duration-300 hover:text-accent"
+              >
+                About Us
+              </a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <a
+                href="#"
+                className="transition-all duration-300 hover:text-accent"
+              >
+                Contact Us
+              </a>
             </li>
           </ul>
         </nav>

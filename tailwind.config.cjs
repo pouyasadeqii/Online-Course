@@ -16,7 +16,10 @@ module.exports = {
         "post": "#e9e9e9",
         "green01": "#00a946",
         "green02": "#468F7D",
-      }
+      },
+      screens: {
+        'xs': '550px',
+      },
     },
     
   },
