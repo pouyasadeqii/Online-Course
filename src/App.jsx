@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import NewCourses from "./components/NewCourses";
 import PopularCourses from "./components/PopularCourses";
+import StudentsStories from "./components/StudentsStories";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <PopularCourses />
       <Category />
       <NewCourses />
+      <StudentsStories />
     </div>
   );
 };

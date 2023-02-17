@@ -10,12 +10,12 @@ const Header = () => {
     <section className="bg-[#FDEBEA] w-full pt-8 pb-20">
       <header className=" px-6 md:px-32 bg-[#FDEBEA] rounded-lg  mx-auto ">
         <article className="flex justify-between items-center w-full container mx-auto sticky ">
-          <div className="hidden lg:flex  items-center gap-2">
+          <a href="#" className="hidden lg:flex items-center gap-2">
             <img src={logo} alt="logo" />
-            <span className="text-accent font-bold cursor-default">
+            <span className="text-accent font-bold">
               e-learning
             </span>
-          </div>
+          </a>
 
           {/* mobile menu */}
 

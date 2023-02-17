@@ -20,7 +20,7 @@ const NewCourses = () => {
           <div className="bg-green-100 w-full rounded-lg flex justify-center items-center py-5 flex-shrink-0 md:flex-shrink mb-3">
             <img src={handCoding} alt="handCoding" loading="lazy" />
           </div>
-          <h2 className="font-bold px-1 mb-8">Advanced PHP programming</h2>
+          <h2 className="font-bold px-1 mb-8 text-sm">Advanced PHP programming</h2>
           <div className="flex justify-between items-center px-1 pb-3">
             <div className="flex gap-1">
               <img src={calendarSearch} alt="calendarSearch" loading="lazy" />
@@ -37,7 +37,7 @@ const NewCourses = () => {
           <div className="bg-yellow-50 w-full rounded-lg flex justify-center items-center py-5 flex-shrink-0 md:flex-shrink mb-3">
             <img src={android} className="w-[115px] h-[115px]" alt="android" loading="lazy" />
           </div>
-          <h2 className="font-bold px-1 mb-8">Android Developer </h2>
+          <h2 className="font-bold px-1 mb-8 text-sm">Android Developer </h2>
           <div className="flex justify-between items-center px-1 pb-3">
             <div className="flex gap-1">
               <img src={calendarSearch} alt="calendarSearch" loading="lazy" />
@@ -54,7 +54,7 @@ const NewCourses = () => {
           <div className="bg-pink-100 w-full rounded-lg flex justify-center items-center py-5 flex-shrink-0 md:flex-shrink mb-3">
             <img src={userInterface} className="w-[115px] h-[115px]" alt="userInterface" loading="lazy" />
           </div>
-          <h2 className="font-bold px-1 mb-8">User Interface Design</h2>
+          <h2 className="font-bold px-1 mb-8 text-sm">User Interface Design</h2>
           <div className="flex justify-between items-center px-1 pb-3">
             <div className="flex gap-1">
               <img src={calendarSearch} alt="calendarSearch" loading="lazy" />

@@ -19,7 +19,7 @@ const Category = () => {
       </p>
 
       <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
-        <div className="w-[255px] shadow-lg bg-white rounded-lg p-3 flex gap-6">
+        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
           <img loading="lazy" src={uxResearcher} alt="uxresearcher" className="w-20 h-14" />
           <div className="flex flex-col gap-2">
             <span className="font-semibold text-myblack text-sm">
@@ -28,7 +28,7 @@ const Category = () => {
             <span className="text-sm text-mygray">15 Course</span>
           </div>
         </div>
-        <div className="w-[255px] shadow-lg bg-white rounded-lg p-3 flex gap-6">
+        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
           <img loading="lazy" src={userInterface} alt="uxresearcher" className="w-20 h-14" />
           <div className="flex flex-col gap-2">
             <span className="font-semibold text-myblack text-sm">
@@ -37,7 +37,7 @@ const Category = () => {
             <span className="text-sm text-mygray">15 Course</span>
           </div>
         </div>
-        <div className="w-[255px] shadow-lg bg-white rounded-lg p-3 flex gap-6">
+        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
           <img loading="lazy" src={userExperience} alt="uxresearcher" className="w-20 h-14" />
           <div className="flex flex-col gap-2">
             <span className="font-semibold text-myblack text-sm">
@@ -46,7 +46,7 @@ const Category = () => {
             <span className="text-sm text-mygray">15 Course</span>
           </div>
         </div>
-        <div className="w-[255px] shadow-lg bg-white rounded-lg p-3 flex gap-6">
+        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
           <img loading="lazy" src={webDesign} alt="uxresearcher" className="w-20 h-14" />
           <div className="flex flex-col gap-2">
             <span className="font-semibold text-myblack text-sm">
@@ -58,7 +58,7 @@ const Category = () => {
       </div>
 
       <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
-        <div className="w-[255px] shadow-lg bg-white rounded-lg p-3 flex gap-6">
+        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
           <img
             src={backendDeveloper}
             alt="uxresearcher"
@@ -71,7 +71,7 @@ const Category = () => {
             <span className="text-sm text-mygray">15 Course</span>
           </div>
         </div>
-        <div className="w-[255px] shadow-lg bg-white rounded-lg p-3 flex gap-6">
+        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
           <img loading="lazy" src={dataScience} alt="uxresearcher" className="w-20 h-14" />
           <div className="flex flex-col gap-2">
             <span className="font-semibold text-myblack text-sm">
@@ -80,7 +80,7 @@ const Category = () => {
             <span className="text-sm text-mygray">15 Course</span>
           </div>
         </div>
-        <div className="w-[255px] shadow-lg bg-white rounded-lg p-3 flex gap-6">
+        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
           <img loading="lazy" src={graphicDesign} alt="uxresearcher" className="w-20 h-14" />
           <div className="flex flex-col gap-2">
             <span className="font-semibold text-myblack text-sm">
@@ -89,7 +89,7 @@ const Category = () => {
             <span className="text-sm text-mygray">15 Course</span>
           </div>
         </div>
-        <div className="w-[255px] shadow-lg bg-white rounded-lg p-3 flex gap-6">
+        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
           <img loading="lazy" src={contentWritting} alt="uxresearcher" className="w-20 h-14" />
           <div className="flex flex-col gap-2">
             <span className="font-semibold text-myblack text-sm">
