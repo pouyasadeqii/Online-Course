@@ -42,9 +42,11 @@ const StudentsStories = () => {
   const videoRef = useRef();
 
   const videoHandler = (e) => {
+    if (!(video == videos[e.target.alt])) {
+      setFlag(true);
+    }
     setVideo(videos[e.target.alt]);
     setVideoPoster(images[e.target.alt]);
-    setFlag(true);
   };
 
   const showHandler = () => {
