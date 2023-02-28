@@ -1,5 +1,6 @@
 import React from "react";
 import Category from "./components/Category";
+import ContactUs from "./components/ContactUs";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import NewCourses from "./components/NewCourses";
@@ -15,6 +16,7 @@ const App = () => {
       <Category />
       <NewCourses />
       <StudentsStories />
+      <ContactUs />
     </div>
   );
 };
