@@ -36,7 +36,7 @@ const PopularCourses = () => {
 
         <div className="flex items-center gap-5 w-full overflow-scroll pb-4 xl:overflow-hidden">
           <div className="w-[280px] flex-shrink-0 xl:flex-shrink xl:w-full bg-secondary rounded-2xl overflow-hidden">
-            <div className="relative">
+            <div className="relative overflow-hidden">
               <img src={programming1} alt="programming" className="transition-transform duration-300 hover:scale-110" />
               <span className="px-3 inline-block py-1 bg-white text-[#00a946] rounded absolute top-6 right-3">
                 programming
@@ -71,7 +71,7 @@ const PopularCourses = () => {
             </div>
           </div>
           <div className="w-[280px] flex-shrink-0 xl:flex-shrink xl:w-full  bg-secondary rounded-2xl overflow-hidden">
-            <div className="relative">
+            <div className="relative overflow-hidden">
               <img src={programming2} alt="programming" className="transition-transform duration-300 hover:scale-110" />
               <span className="px-3 inline-block py-1 bg-white text-[#00a946] rounded absolute top-6 right-3">
                 programming
@@ -106,7 +106,7 @@ const PopularCourses = () => {
             </div>
           </div>
           <div className="w-[280px] flex-shrink-0 xl:flex-shrink xl:w-full  bg-secondary rounded-2xl overflow-hidden">
-            <div className="relative">
+            <div className="relative overflow-hidden">
               <img src={graphic} alt="programming" className="transition-transform duration-300 hover:scale-110" />
               <span className="px-3 inline-block py-1 bg-white text-[#00a946] rounded absolute top-6 right-3">
               Graphic
@@ -142,7 +142,7 @@ const PopularCourses = () => {
           </div>
           
           <div className="w-[280px] flex-shrink-0 xl:flex-shrink xl:w-full  bg-secondary rounded-2xl overflow-hidden">
-            <div className="relative">
+            <div className="relative overflow-hidden">
               <img src={design} alt="programming" className="transition-transform duration-300 hover:scale-110" />
               <span className="px-3 inline-block py-1 bg-white text-[#00a946] rounded absolute top-6 right-3">
               Design
