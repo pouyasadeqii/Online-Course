@@ -1,6 +1,7 @@
 import React from "react";
 import Category from "./components/Category";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import NewArticles from "./components/NewArticles";
@@ -19,6 +20,7 @@ const App = () => {
       <StudentsStories />
       <ContactUs />
       <NewArticles />
+      <Footer />
     </div>
   );
 };

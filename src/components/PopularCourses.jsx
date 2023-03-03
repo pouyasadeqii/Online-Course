@@ -1,8 +1,8 @@
 import React from "react";
-import programming1 from "../assets/images/programming1.jpg";
-import programming2 from "../assets/images/programming2.jpg";
-import graphic from "../assets/images/graphic.jpg";
-import design from "../assets/images/design.jpg";
+import programming1 from "../assets/images/programming3.png";
+import programming2 from "../assets/images/programming2.png";
+import graphic from "../assets/images/graphic.png";
+import design from "../assets/images/design.png";
 import clock from "../assets/images/clock.svg";
 import people from "../assets/images/people.svg";
 import book from "../assets/images/book.svg";
@@ -37,7 +37,7 @@ const PopularCourses = () => {
         <div className="flex items-center gap-5 w-full overflow-scroll pb-4 xl:overflow-hidden">
           <div className="w-[280px] flex-shrink-0 xl:flex-shrink xl:w-full bg-secondary rounded-2xl overflow-hidden">
             <div className="relative overflow-hidden">
-              <img src={programming1} alt="programming" className="transition-transform duration-300 hover:scale-110" />
+              <img src={programming1} alt="programming" className="transition-transform duration-300 hover:scale-110 h-[156px]" />
               <span className="px-3 inline-block py-1 bg-white text-[#00a946] rounded absolute top-6 right-3">
                 programming
               </span>
@@ -72,7 +72,7 @@ const PopularCourses = () => {
           </div>
           <div className="w-[280px] flex-shrink-0 xl:flex-shrink xl:w-full  bg-secondary rounded-2xl overflow-hidden">
             <div className="relative overflow-hidden">
-              <img src={programming2} alt="programming" className="transition-transform duration-300 hover:scale-110" />
+              <img src={programming2} alt="programming" className="transition-transform duration-300 hover:scale-110 h-[156px]" />
               <span className="px-3 inline-block py-1 bg-white text-[#00a946] rounded absolute top-6 right-3">
                 programming
               </span>
@@ -107,7 +107,7 @@ const PopularCourses = () => {
           </div>
           <div className="w-[280px] flex-shrink-0 xl:flex-shrink xl:w-full  bg-secondary rounded-2xl overflow-hidden">
             <div className="relative overflow-hidden">
-              <img src={graphic} alt="programming" className="transition-transform duration-300 hover:scale-110" />
+              <img src={graphic} alt="programming" className="transition-transform duration-300 hover:scale-110 h-[156px]" />
               <span className="px-3 inline-block py-1 bg-white text-[#00a946] rounded absolute top-6 right-3">
               Graphic
               </span>
@@ -143,7 +143,7 @@ const PopularCourses = () => {
           
           <div className="w-[280px] flex-shrink-0 xl:flex-shrink xl:w-full  bg-secondary rounded-2xl overflow-hidden">
             <div className="relative overflow-hidden">
-              <img src={design} alt="programming" className="transition-transform duration-300 hover:scale-110" />
+              <img src={design} alt="programming" className="transition-transform duration-300 hover:scale-110 h-[156px]" />
               <span className="px-3 inline-block py-1 bg-white text-[#00a946] rounded absolute top-6 right-3">
               Design
               </span>

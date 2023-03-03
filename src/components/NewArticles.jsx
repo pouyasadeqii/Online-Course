@@ -3,7 +3,7 @@ import artificial from "../assets/images/artificial.svg";
 import business from "../assets/images/business.svg";
 import uxdesign from "../assets/images/uxdesign.svg";
 import flutter from "../assets/images/flutter.svg";
-import writer from "../assets/images/3.jpg";
+import writer from "../assets/images/person.png";
 import clock from "../assets/images/clock.svg";
 import calendar from "../assets/images/calendarSearch.svg";
 

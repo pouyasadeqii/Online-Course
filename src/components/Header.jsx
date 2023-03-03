@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
 import menu from "../assets/images/textalign-left.svg";
 import close from "../assets/images/close.svg";
+import facebook from "../assets/images/facebook.svg";
+import linkedin from "../assets/images/linkedin.svg";
+import instagram from "../assets/images/instagram.svg";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -12,7 +15,7 @@ const Header = () => {
         <article className="flex justify-between items-center w-full container mx-auto sticky ">
           <a href="#" className="hidden lg:flex items-center gap-2">
             <img src={logo} alt="logo" />
-            <span className="text-accent font-bold">
+            <span className="text-accent font-bold cursor-pointer">
               e-learning
             </span>
           </a>
@@ -146,6 +149,19 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+
+        {/* social media */}
+        <div className="flex items-center justify-center gap-4 mt-44 border-t-2 py-2">
+          <a href="#">
+            <img src={facebook} alt="facebook" />
+          </a>
+          <a href="#">
+            <img src={instagram} alt="instagram" />
+          </a>
+          <a href="#">
+            <img src={linkedin} alt="linkedin" />
+          </a>
+        </div>
       </div>
     </section>
   );
