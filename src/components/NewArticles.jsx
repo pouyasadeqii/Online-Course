@@ -9,7 +9,7 @@ import calendar from "../assets/images/calendarSearch.svg";
 
 const NewArticles = () => {
   return (
-    <section className="mx-6 md:mx-32 mt-2 mb-32">
+    <section className="mx-6 md:mx-32 mt-2 mb-32" id="articles">
       {/* header new article */}
       <div className="flex items-end sm:items-center justify-between mb-16">
         <h2 className="text-myblack font-bold text-2xl sm:text-[40px] leading-[50px]">

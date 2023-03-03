@@ -28,7 +28,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#courses"
                 className="text-myblack transition-all duration-300 hover:text-mygray sm:border-r sm:pr-6 border-myblack"
               >
                 Courses
@@ -36,7 +36,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#articles"
                 className="text-myblack transition-all duration-300 hover:text-mygray sm:border-r sm:pr-6 border-myblack"
               >
                 Articles
@@ -44,7 +44,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#stories"
                 className="text-myblack transition-all duration-300 hover:text-mygray sm:border-r sm:pr-6 border-myblack"
               >
                 Stories
@@ -52,7 +52,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#contactus"
                 className="text-myblack transition-all duration-300 hover:text-mygray"
               >
                 Contact Us

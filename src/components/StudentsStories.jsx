@@ -55,7 +55,7 @@ const StudentsStories = () => {
   };
 
   return (
-    <div className="mx-6 md:mx-32 mb-40">
+    <div className="mx-6 md:mx-32 mb-40" id="stories">
       <h2 className="text-center lg:text-start font-bold text-3xl lg:text-4xl mb-10">
         Students stories
       </h2>

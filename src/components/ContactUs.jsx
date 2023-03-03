@@ -12,7 +12,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section className={`mx-6 md:mx-32 mb-20`}>
+    <section className={`mx-6 md:mx-32 mb-20`} id="contactus">
       <div
         className={`${styles.background} rounded-2xl pb-5 px-2 flex flex-col gap-y-5 xl:gap-y-0 xl:flex-row justify-center `}
       >

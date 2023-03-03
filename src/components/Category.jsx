@@ -10,7 +10,7 @@ import contentWritting from "../assets/images/contentWritting.jpg";
 
 const Category = () => {
   return (
-    <div className="mx-6 md:mx-32 mb-20">
+    <section className="mx-6 md:mx-32 mb-20">
       <h2 className="text-center lg:text-start font-bold text-3xl lg:text-4xl mb-5">
         Category
       </h2>
@@ -99,7 +99,7 @@ const Category = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

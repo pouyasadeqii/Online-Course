@@ -10,7 +10,7 @@ import person from "../assets/images/person.png";
 
 const PopularCourses = () => {
   return (
-    <section className="w-full pt-10 bg-primary mb-24">
+    <section className="w-full pt-10 bg-primary mb-24" id="courses">
       <div className="px-6 md:px-32">
         {/* popular header */}
 
