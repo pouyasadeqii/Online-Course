@@ -236,7 +236,7 @@ const StudentsStories = () => {
             <img
               src={play}
               alt="play"
-              className="absolute w-14 h-14 top-[30%] sm:top-[40%] sm:left-[47%] left-[44%] cursor-pointer"
+              className="hidden lg:block absolute w-14 h-14 top-[30%] sm:top-[40%] sm:left-[47%] left-[44%] cursor-pointer"
               onClick={showHandler}
             />
           )}
