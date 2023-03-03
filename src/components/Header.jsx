@@ -94,61 +94,63 @@ const Header = () => {
       <div
         className={`bg-primary mobilemenu w-10/12 sm:w-1/2 md:w-1/2 p-3 fixed top-0 ${
           mobileMenu ? "left-0" : "-left-[100%]"
-        } h-full overflow-y-scroll transition-all duration-300 lg:hidden`}
+        } h-full overflow-y-scroll transition-all duration-300 flex flex-col justify-between lg:hidden`}
       >
-        <div className="flex items-center justify-between border-b-2 border-accent py-2">
-          <div className="flex items-center gap-4">
-            <img src={logo} alt="logo" />
-            <span className="text-accent font-bold">e-learning</span>
+        <div>
+          <div className="flex items-center justify-between border-b-2 border-accent py-2">
+            <div className="flex items-center gap-4">
+              <img src={logo} alt="logo" />
+              <span className="text-accent font-bold">e-learning</span>
+            </div>
+            <img
+              className="cursor-pointer"
+              src={close}
+              alt="close"
+              onClick={() => setMobileMenu(!mobileMenu)}
+            />
           </div>
-          <img
-            className="cursor-pointer"
-            src={close}
-            alt="close"
-            onClick={() => setMobileMenu(!mobileMenu)}
-          />
+          <nav className="mt-8">
+            <ul className="flex flex-col gap-5 font-semibold text-myblack">
+              <li>
+                <a href="#" className="text-accent">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:text-accent"
+                >
+                  Courses
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:text-accent"
+                >
+                  Articles
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:text-accent"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:text-accent"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav className="mt-8">
-          <ul className="flex flex-col gap-5 font-semibold text-myblack">
-            <li>
-              <a href="#" className="text-accent">
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="transition-all duration-300 hover:text-accent"
-              >
-                Courses
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="transition-all duration-300 hover:text-accent"
-              >
-                Articles
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="transition-all duration-300 hover:text-accent"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="transition-all duration-300 hover:text-accent"
-              >
-                Contact Us
-              </a>
-            </li>
-          </ul>
-        </nav>
 
         {/* social media */}
         <div className="flex items-center justify-center gap-4 mt-44 border-t-2 py-2">
