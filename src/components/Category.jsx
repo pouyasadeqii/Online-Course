@@ -18,7 +18,7 @@ const Category = () => {
         You Can Access To All Categories Here And Choose Them.
       </p>
 
-      <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
+      <div className="grid justify-items-center grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
         <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
           <img loading="lazy" src={uxResearcher} alt="uxresearcher" className="w-20 h-14" />
           <div className="flex flex-col gap-2">
@@ -57,7 +57,7 @@ const Category = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
+      <div className="grid justify-items-center grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
         <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
           <img
             src={backendDeveloper}
