@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import contentWritting from "../assets/images/contentWritting.jpg";
 import poster from "../assets/images/7.jpg";
 import four from "../assets/images/1.jpg";
 import two from "../assets/images/2.jpg";
@@ -27,12 +26,48 @@ const videos = {
 
 const images = {
   uiStudent: one,
-  pythonStudent: four,
-  graphicStudent: five,
   webStudent1: two,
   webStudent2: three,
+  pythonStudent: four,
+  graphicStudent: five,
   webStudent3: six,
 };
+
+const firstCol = [
+  {
+    image: one,
+    category: "Ui/Ux student",
+    alt: "uiStudent",
+  },
+  {
+    image: two,
+    category: "Web developer student",
+    alt: "webStudent1",
+  },
+  {
+    image: three,
+    category: "Web developer student",
+    alt: "webStudent2",
+  },
+];
+
+const secondCol = [
+  {
+    image: four,
+    category: "Python student",
+    alt: "pythonStudent",
+  },
+  {
+    image: five,
+    category: "Graphic Design student",
+    alt: "graphicStudent",
+  },
+  {
+    image: six,
+    category: "Web developer student",
+    alt: "webStudent3",
+  },
+];
 
 const StudentsStories = () => {
   const [video, setVideo] = useState(sapmle);
@@ -66,159 +101,73 @@ const StudentsStories = () => {
         <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-5">
           {/* 1 */}
           <div className="flex flex-col gap-4 w-full">
-            <div className="w-full bg-white p-3 rounded-lg flex items-center gap-3">
-              <div className="w-20 h-20 relative">
-                <img
-                  loading="lazy"
-                  src={one}
-                  alt="uiStudent"
-                  className="wfull h-full object-cover rounded cursor-pointer z-50"
-                  onClick={videoHandler}
-                />
-                <img
-                  src={play}
-                  alt="uiStudent"
-                  className="absolute top-7 left-7 cursor-pointer"
-                  onClick={videoHandler}
-                />
-              </div>
-              <div className="flex flex-col gap-4">
-                <span className="font-semibold text-myblack text-sm">
-                  John Esmith
-                </span>
-                <span className="text-[13px] text-mygray">Ui/Ux student</span>
-              </div>
-            </div>
-
-            <div className="w-full bg-white p-3 rounded-lg flex items-center gap-3">
-              <div className="w-20 h-20 relative">
-                <img
-                  loading="lazy"
-                  src={two}
-                  alt="webStudent1"
-                  className="w-20 h-20 object-cover rounded cursor-pointer"
-                  onClick={videoHandler}
-                />
-                <img
-                  src={play}
-                  alt="webStudent1"
-                  className="absolute top-7 left-7 cursor-pointer"
-                  onClick={videoHandler}
-                />
-              </div>
-              <div className="flex flex-col gap-4">
-                <span className="font-semibold text-myblack text-sm">
-                  John Esmith
-                </span>
-                <span className="text-[13px] text-mygray">
-                  Web developer student
-                </span>
-              </div>
-            </div>
-
-            <div className="w-full bg-white p-3 rounded-lg flex items-center gap-3">
-              <div className="w-20 h-20 relative">
-                <img
-                  loading="lazy"
-                  src={three}
-                  alt="webStudent2"
-                  className="w-20 h-20 object-cover rounded cursor-pointer"
-                  onClick={videoHandler}
-                />
-                <img
-                  src={play}
-                  alt="webStudent2"
-                  className="absolute top-7 left-7 cursor-pointer"
-                  onClick={videoHandler}
-                />
-              </div>
-              <div className="flex flex-col gap-4">
-                <span className="font-semibold text-myblack text-sm">
-                  John Esmith
-                </span>
-                <span className="text-[13px] text-mygray">
-                  Web developer student
-                </span>
-              </div>
-            </div>
+            {firstCol.map((item) => {
+              return (
+                <div
+                  key={item.alt}
+                  className="w-full bg-white p-3 rounded-lg flex items-center gap-3"
+                >
+                  <div className="w-20 h-20 relative">
+                    <img
+                      loading="lazy"
+                      src={item.image}
+                      alt={item.alt}
+                      className="wfull h-full object-cover rounded cursor-pointer z-50"
+                      onClick={videoHandler}
+                    />
+                    <img
+                      src={play}
+                      alt={item.alt}
+                      className="absolute top-7 left-7 cursor-pointer"
+                      onClick={videoHandler}
+                    />
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <span className="font-semibold text-myblack text-sm">
+                      John Esmith
+                    </span>
+                    <span className="text-[13px] text-mygray">
+                      {item.category}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
           {/* 2 */}
           <div className="flex flex-col gap-4 w-full">
-            <div className="w-full bg-white p-3 rounded-lg flex items-center gap-3">
-              <div className="w-20 h-20 relative">
-                <img
-                  loading="lazy"
-                  src={four}
-                  alt="pythonStudent"
-                  className="w-20 h-20 object-cover rounded cursor-pointer"
-                  onClick={videoHandler}
-                />
-                <img
-                  src={play}
-                  alt="pythonStudent"
-                  className="absolute top-7 left-7 cursor-pointer"
-                  onClick={videoHandler}
-                />
-              </div>
-              <div className="flex flex-col gap-4">
-                <span className="font-semibold text-myblack text-sm">
-                  John Esmith
-                </span>
-                <span className="text-[13px] text-mygray">Python student</span>
-              </div>
-            </div>
-
-            <div className="w-full bg-white p-3 rounded-lg flex items-center gap-3">
-              <div className="w-20 h-20 relative">
-                <img
-                  loading="lazy"
-                  src={five}
-                  alt="graphicStudent"
-                  className="w-20 h-20 object-cover rounded cursor-pointer"
-                  onClick={videoHandler}
-                />
-                <img
-                  src={play}
-                  alt="graphicStudent"
-                  className="absolute top-7 left-7 cursor-pointer"
-                  onClick={videoHandler}
-                />
-              </div>
-              <div className="flex flex-col gap-4">
-                <span className="font-semibold text-myblack text-sm">
-                  John Esmith
-                </span>
-                <span className="text-[13px] text-mygray">
-                  Graphic Design student
-                </span>
-              </div>
-            </div>
-
-            <div className="w-full bg-white p-3 rounded-lg flex items-center gap-3">
-              <div className="w-20 h-20 relative">
-                <img
-                  loading="lazy"
-                  src={six}
-                  alt="webStudent3"
-                  className="w-20 h-20 object-cover rounded cursor-pointer"
-                  onClick={videoHandler}
-                />
-                <img
-                  src={play}
-                  alt="webStudent3"
-                  className="absolute top-7 left-7 cursor-pointer"
-                  onClick={videoHandler}
-                />
-              </div>
-              <div className="flex flex-col gap-4">
-                <span className="font-semibold text-myblack text-sm">
-                  John Esmith
-                </span>
-                <span className="text-[13px] text-mygray">
-                  Web developer student
-                </span>
-              </div>
-            </div>
+            {secondCol.map((item) => {
+              return (
+                <div
+                  key={item.alt}
+                  className="w-full bg-white p-3 rounded-lg flex items-center gap-3"
+                >
+                  <div className="w-20 h-20 relative">
+                    <img
+                      loading="lazy"
+                      src={item.image}
+                      alt={item.alt}
+                      className="w-20 h-20 object-cover rounded cursor-pointer"
+                      onClick={videoHandler}
+                    />
+                    <img
+                      src={play}
+                      alt={item.alt}
+                      className="absolute top-7 left-7 cursor-pointer"
+                      onClick={videoHandler}
+                    />
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <span className="font-semibold text-myblack text-sm">
+                      John Esmith
+                    </span>
+                    <span className="text-[13px] text-mygray">
+                      {item.category}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
 

@@ -9,14 +9,17 @@ const data = [
   {
     image: handCoding,
     title: "Advanced PHP programming",
+    bgColor: "bg-green-50",
   },
   {
     image: android,
     title: "Android Developer",
+    bgColor: "bg-yellow-50",
   },
   {
     image: userInterface,
     title: "User Interface Design",
+    bgColor: "bg-pink-50",
   },
 ];
 
@@ -35,7 +38,7 @@ const NewCourses = () => {
               key={item.title}
               className="bg-white hover:shadow-xl transition-shadow duration-300 px-2 pt-2 rounded-2xl w-[300px] h-[285px]"
             >
-              <div className="bg-green-100 w-full rounded-lg flex justify-center items-center py-5 flex-shrink-0 md:flex-shrink mb-3">
+              <div className={`${item.bgColor} w-full rounded-lg flex justify-center items-center py-5 flex-shrink-0 md:flex-shrink mb-3`}>
                 <img
                   src={item.image}
                   alt="handCoding"

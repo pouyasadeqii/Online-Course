@@ -7,6 +7,32 @@ import writer from "../assets/images/person.png";
 import clock from "../assets/images/clock.svg";
 import calendar from "../assets/images/calendarSearch.svg";
 
+const rowOne = [
+  {
+    image: artificial,
+    category: "artificial intelligence",
+    title: "A review of machine learning",
+  },
+  {
+    image: business,
+    category: "Business",
+    title: "How does a product manager think?",
+  },
+];
+
+const rowTow = [
+  {
+    image: uxdesign,
+    category: "Design",
+    title: "What is user experience?",
+  },
+  {
+    image: flutter,
+    category: "programming",
+    title: "Flutter architectural overview",
+  },
+];
+
 const NewArticles = () => {
   return (
     <section className="mx-6 md:mx-32 mt-2 mb-32" id="articles">
@@ -43,186 +69,106 @@ const NewArticles = () => {
 
       {/* body New article row1 */}
       <div className="flex flex-col xl:flex-row gap-5 items-center mb-5">
-        {/* 1 */}
-        <div className="flex flex-col sm:flex-row gap-4 p-2 rounded-lg shadow-md hover:shadow-none transition-shadow duration-200 bg-secondary max-w-[580px]">
-          <img src={artificial} alt="artificial" />
+        {rowOne.map((item) => {
+          return (
+            <div
+              key={item.category}
+              className="flex flex-col sm:flex-row gap-4 p-2 rounded-lg shadow-md hover:shadow-none transition-shadow duration-200 bg-secondary max-w-[580px]"
+            >
+              <img src={item.image} alt="artificial" />
 
-          <div className="flex flex-col">
-            {/* category and writer */}
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-1">
-                <img
-                  src={writer}
-                  className="w-10 h-10 rounded-full object-cover"
-                  alt="writer"
-                />
-                <span className="text-myblack leading-5 text-xs">
-                  Saghar Saberi
-                </span>
+              <div className="flex flex-col">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1">
+                    <img
+                      src={writer}
+                      className="w-10 h-10 rounded-full object-cover"
+                      alt="writer"
+                    />
+                    <span className="text-myblack leading-5 text-xs">
+                      Saghar Saberi
+                    </span>
+                  </div>
+                  <span className="text-mygray bg-primary p-2 text-xs leading-5 rounded ">
+                    {item.category}
+                  </span>
+                </div>
+
+                <h3 className="text-myblack font-bold leading-[14px] mt-4 mb-2">
+                  {item.title}
+                </h3>
+
+                <p className="text-mygray text-sm xl:text-xs xxl:text-sm leading-6 max-w-[365px] mb-4">
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing industries for...
+                </p>
+
+                <div className="flex items-center">
+                  <img src={calendar} alt="calendarSearch" />
+                  <span className="text-mygray text-[10px] leading-5 ml-1">
+                    Aug 15,2022
+                  </span>
+                  <img src={clock} alt="clock" className="ml-9" />
+                  <span className="text-mygray text-[10px] leading-5 ml-1">
+                    7 min read
+                  </span>
+                </div>
               </div>
-              <span className="text-mygray bg-primary p-2 text-xs leading-5 rounded ">
-                artificial intelligence
-              </span>
             </div>
-
-            {/* article title */}
-            <h3 className="text-myblack text-sm lg:text-base font-bold lg:leading-[14px] mt-4 mb-2">
-              A review of machine learning
-            </h3>
-            {/* article content */}
-            <p className="text-mygray text-sm xl:text-xs xxl:text-sm leading-6 max-w-[365px] mb-4">
-              Lorem ipsum is placeholder text commonly used in the graphic,
-              print, and publishing industries for...
-            </p>
-            {/* article date */}
-            <div className="flex items-center">
-              <img src={calendar} alt="calendarSearch" />
-              <span className="text-mygray text-[10px] leading-5 ml-1">
-                Aug 15,2022
-              </span>
-              <img src={clock} alt="clock" className="ml-9" />
-              <span className="text-mygray text-[10px] leading-5 ml-1">
-                7 min read
-              </span>
-            </div>
-          </div>
-        </div>
-        {/* 2 */}
-        <div className="flex flex-col sm:flex-row gap-4 p-2 rounded-lg shadow-md hover:shadow-none transition-shadow duration-200 bg-secondary max-w-[580px]">
-          <img src={business} alt="artificial" />
-
-          <div className="flex flex-col">
-            {/* category and writer */}
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-1">
-                <img
-                  src={writer}
-                  className="w-10 h-10 rounded-full object-cover"
-                  alt="writer"
-                />
-                <span className="text-myblack leading-5 text-xs">
-                  Saghar Saberi
-                </span>
-              </div>
-              <span className="text-mygray bg-primary p-2 text-xs leading-5 rounded ">
-                Business
-              </span>
-            </div>
-
-            {/* article title */}
-            <h3 className="text-myblack font-bold leading-[14px] mt-4 mb-2">
-              How does a product manager think?
-            </h3>
-            {/* article content */}
-            <p className="text-mygray text-sm xl:text-xs xxl:text-sm leading-6 max-w-[365px] mb-4">
-              Lorem ipsum is placeholder text commonly used in the graphic,
-              print, and publishing industries for...
-            </p>
-            {/* article date */}
-            <div className="flex items-center">
-              <img src={calendar} alt="calendarSearch" />
-              <span className="text-mygray text-[10px] leading-5 ml-1">
-                Aug 15,2022
-              </span>
-              <img src={clock} alt="clock" className="ml-9" />
-              <span className="text-mygray text-[10px] leading-5 ml-1">
-                7 min read
-              </span>
-            </div>
-          </div>
-        </div>
+          );
+        })}
       </div>
 
       {/* body New article row2 */}
       <div className="flex flex-col xl:flex-row gap-5 items-center mb-5">
-        {/* 1 */}
-        <div className="flex flex-col sm:flex-row gap-4 p-2 rounded-lg shadow-md hover:shadow-none transition-shadow duration-200 bg-secondary max-w-[580px]">
-          <img src={uxdesign} alt="artificial" />
+        {rowTow.map((item) => {
+          return (
+            <div
+              key={item.category}
+              className="flex flex-col sm:flex-row gap-4 p-2 rounded-lg shadow-md hover:shadow-none transition-shadow duration-200 bg-secondary max-w-[580px]"
+            >
+              <img src={item.image} alt="artificial" />
 
-          <div className="flex flex-col">
-            {/* category and writer */}
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-1">
-                <img
-                  src={writer}
-                  className="w-10 h-10 rounded-full object-cover"
-                  alt="writer"
-                />
-                <span className="text-myblack leading-5 text-xs">
-                  Saghar Saberi
-                </span>
+              <div className="flex flex-col">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1">
+                    <img
+                      src={writer}
+                      className="w-10 h-10 rounded-full object-cover"
+                      alt="writer"
+                    />
+                    <span className="text-myblack leading-5 text-xs">
+                      Saghar Saberi
+                    </span>
+                  </div>
+                  <span className="text-mygray bg-primary p-2 text-xs leading-5 rounded ">
+                    {item.category}
+                  </span>
+                </div>
+
+                <h3 className="text-myblack font-bold leading-[14px] mt-4 mb-2">
+                  {item.title}
+                </h3>
+
+                <p className="text-mygray text-sm xl:text-xs xxl:text-sm leading-6 max-w-[365px] mb-4">
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing industries for...
+                </p>
+
+                <div className="flex items-center">
+                  <img src={calendar} alt="calendarSearch" />
+                  <span className="text-mygray text-[10px] leading-5 ml-1">
+                    Aug 15,2022
+                  </span>
+                  <img src={clock} alt="clock" className="ml-9" />
+                  <span className="text-mygray text-[10px] leading-5 ml-1">
+                    7 min read
+                  </span>
+                </div>
               </div>
-              <span className="text-mygray bg-primary p-2 text-xs leading-5 rounded ">
-                Design
-              </span>
             </div>
-
-            {/* article title */}
-            <h3 className="text-myblack text-sm lg:text-base font-bold lg:leading-[14px] mt-4 mb-2">
-              What is user experience?
-            </h3>
-            {/* article content */}
-            <p className="text-mygray text-sm xl:text-xs xxl:text-sm leading-6 max-w-[365px] mb-4">
-              Lorem ipsum is placeholder text commonly used in the graphic,
-              print, and publishing industries for...
-            </p>
-            {/* article date */}
-            <div className="flex items-center">
-              <img src={calendar} alt="calendarSearch" />
-              <span className="text-mygray text-[10px] leading-5 ml-1">
-                Aug 15,2022
-              </span>
-              <img src={clock} alt="clock" className="ml-9" />
-              <span className="text-mygray text-[10px] leading-5 ml-1">
-                7 min read
-              </span>
-            </div>
-          </div>
-        </div>
-        {/* 2 */}
-        <div className="flex flex-col sm:flex-row gap-4 p-2 rounded-lg shadow-md hover:shadow-none transition-shadow duration-200 bg-secondary max-w-[580px]">
-          <img src={flutter} alt="artificial" />
-
-          <div className="flex flex-col">
-            {/* category and writer */}
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-1">
-                <img
-                  src={writer}
-                  className="w-10 h-10 rounded-full object-cover"
-                  alt="writer"
-                />
-                <span className="text-myblack leading-5 text-xs">
-                  Saghar Saberi
-                </span>
-              </div>
-              <span className="text-mygray bg-primary p-2 text-xs leading-5 rounded ">
-                programming
-              </span>
-            </div>
-
-            {/* article title */}
-            <h3 className="text-myblack font-bold leading-[14px] mt-4 mb-2">
-              Flutter architectural overview
-            </h3>
-            {/* article content */}
-            <p className="text-mygray text-sm xl:text-xs xxl:text-sm leading-6 max-w-[365px] mb-4">
-              Lorem ipsum is placeholder text commonly used in the graphic,
-              print, and publishing industries for...
-            </p>
-            {/* article date */}
-            <div className="flex items-center">
-              <img src={calendar} alt="calendarSearch" />
-              <span className="text-mygray text-[10px] leading-5 ml-1">
-                Aug 15,2022
-              </span>
-              <img src={clock} alt="clock" className="ml-9" />
-              <span className="text-mygray text-[10px] leading-5 ml-1">
-                7 min read
-              </span>
-            </div>
-          </div>
-        </div>
+          );
+        })}
       </div>
     </section>
   );
