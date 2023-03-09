@@ -94,7 +94,7 @@ const Header = () => {
       <div
         className={`bg-primary mobilemenu w-10/12 sm:w-1/2 md:w-1/2 p-3 fixed top-0 ${
           mobileMenu ? "left-0" : "-left-[100%]"
-        } h-full overflow-y-scroll transition-all duration-300 flex flex-col justify-between lg:hidden`}
+        } h-full overflow-y-scroll transition-all duration-300 flex flex-col justify-between lg:hidden z-50`}
       >
         <div>
           <div className="flex items-center justify-between border-b-2 border-accent py-2">
@@ -112,12 +112,17 @@ const Header = () => {
           <nav className="mt-8">
             <ul className="flex flex-col gap-5 font-semibold text-myblack">
               <li>
-                <a href="#" className="text-accent">
+                <a
+                  onClick={() => setMobileMenu(!mobileMenu)}
+                  href="#"
+                  className="text-accent"
+                >
                   Home
                 </a>
               </li>
               <li>
                 <a
+                  onClick={() => setMobileMenu(!mobileMenu)}
                   href="#courses"
                   className="transition-all duration-300 hover:text-accent"
                 >
@@ -126,6 +131,7 @@ const Header = () => {
               </li>
               <li>
                 <a
+                  onClick={() => setMobileMenu(!mobileMenu)}
                   href="#articles"
                   className="transition-all duration-300 hover:text-accent"
                 >
@@ -134,6 +140,7 @@ const Header = () => {
               </li>
               <li>
                 <a
+                  onClick={() => setMobileMenu(!mobileMenu)}
                   href="#stories"
                   className="transition-all duration-300 hover:text-accent"
                 >
@@ -142,6 +149,7 @@ const Header = () => {
               </li>
               <li>
                 <a
+                  onClick={() => setMobileMenu(!mobileMenu)}
                   href="#contactus"
                   className="transition-all duration-300 hover:text-accent"
                 >
