@@ -8,6 +8,44 @@ import dataScience from "../assets/images/dataScience.jpg";
 import graphicDesign from "../assets/images/graphicDesign.jpg";
 import contentWritting from "../assets/images/contentWritting.jpg";
 
+const rowOne = [
+  {
+    image: uxResearcher,
+    category: "Ux Research",
+  },
+  {
+    image: userInterface,
+    category: "User Interface",
+  },
+  {
+    image: userExperience,
+    category: "User Experience",
+  },
+  {
+    image: webDesign,
+    category: "Web Design",
+  },
+];
+
+const rowTwo = [
+  {
+    image: backendDeveloper,
+    category: "Backend Developer",
+  },
+  {
+    image: dataScience,
+    category: "Data Science",
+  },
+  {
+    image: graphicDesign,
+    category: "Graphic Design",
+  },
+  {
+    image: contentWritting,
+    category: "Content Writting",
+  },
+];
+
 const Category = () => {
   return (
     <section className="mx-6 md:mx-32 mb-20">
@@ -19,85 +57,46 @@ const Category = () => {
       </p>
 
       <div className="grid justify-items-center grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
-        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
-          <img loading="lazy" src={uxResearcher} alt="uxresearcher" className="w-20 h-14" />
-          <div className="flex flex-col gap-2">
-            <span className="font-semibold text-myblack text-sm">
-              Ux Research
-            </span>
-            <span className="text-sm text-mygray">15 Course</span>
-          </div>
-        </div>
-        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
-          <img loading="lazy" src={userInterface} alt="uxresearcher" className="w-20 h-14" />
-          <div className="flex flex-col gap-2">
-            <span className="font-semibold text-myblack text-sm">
-              User Interface
-            </span>
-            <span className="text-sm text-mygray">15 Course</span>
-          </div>
-        </div>
-        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
-          <img loading="lazy" src={userExperience} alt="uxresearcher" className="w-20 h-14" />
-          <div className="flex flex-col gap-2">
-            <span className="font-semibold text-myblack text-sm">
-              User Experience
-            </span>
-            <span className="text-sm text-mygray">15 Course</span>
-          </div>
-        </div>
-        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
-          <img loading="lazy" src={webDesign} alt="uxresearcher" className="w-20 h-14" />
-          <div className="flex flex-col gap-2">
-            <span className="font-semibold text-myblack text-sm">
-              Web Design
-            </span>
-            <span className="text-sm text-mygray">15 Course</span>
-          </div>
-        </div>
+        {rowOne.map((item) => {
+          return (
+            <div
+              key={item.category}
+              className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6"
+            >
+              <img
+                loading="lazy"
+                src={item.image}
+                alt="uxresearcher"
+                className="w-20 h-14"
+              />
+              <div className="flex flex-col gap-2">
+                <span className="font-semibold text-myblack text-sm">
+                  {item.category}
+                </span>
+                <span className="text-sm text-mygray">15 Course</span>
+              </div>
+            </div>
+          );
+        })}
       </div>
 
       <div className="grid justify-items-center grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
-        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
-          <img
-            src={backendDeveloper}
-            alt="uxresearcher"
-            className="w-20 h-14"
-          />
-          <div className="flex flex-col gap-2">
-            <span className="font-semibold text-myblack text-sm">
-              Backend Developer
-            </span>
-            <span className="text-sm text-mygray">15 Course</span>
-          </div>
-        </div>
-        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
-          <img loading="lazy" src={dataScience} alt="uxresearcher" className="w-20 h-14" />
-          <div className="flex flex-col gap-2">
-            <span className="font-semibold text-myblack text-sm">
-              Data Science
-            </span>
-            <span className="text-sm text-mygray">15 Course</span>
-          </div>
-        </div>
-        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
-          <img loading="lazy" src={graphicDesign} alt="uxresearcher" className="w-20 h-14" />
-          <div className="flex flex-col gap-2">
-            <span className="font-semibold text-myblack text-sm">
-              Graphic Design
-            </span>
-            <span className="text-sm text-mygray">15 Course</span>
-          </div>
-        </div>
-        <div className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6">
-          <img loading="lazy" src={contentWritting} alt="uxresearcher" className="w-20 h-14" />
-          <div className="flex flex-col gap-2">
-            <span className="font-semibold text-myblack text-sm">
-              Content Writting
-            </span>
-            <span className="text-sm text-mygray">15 Course</span>
-          </div>
-        </div>
+        {rowTwo.map((item) => {
+          return (
+            <div
+              key={item.category}
+              className="w-[255px] shadow-lg hover:shadow-none transition-shadow duration-300 bg-white rounded-lg p-3 flex gap-6"
+            >
+              <img src={item.image} alt="uxresearcher" className="w-20 h-14" />
+              <div className="flex flex-col gap-2">
+                <span className="font-semibold text-myblack text-sm">
+                  {item.category}
+                </span>
+                <span className="text-sm text-mygray">15 Course</span>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
