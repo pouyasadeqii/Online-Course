@@ -108,13 +108,15 @@ const StudentsStories = () => {
                   className="w-full bg-white p-3 rounded-lg flex items-center gap-3"
                 >
                   <div className="w-20 h-20 relative">
-                    <img
-                      loading="lazy"
-                      src={item.image}
-                      alt={item.alt}
-                      className="wfull h-full object-cover rounded cursor-pointer z-50"
-                      onClick={videoHandler}
-                    />
+                    <a href="#videoPlayer">
+                      <img
+                        loading="lazy"
+                        src={item.image}
+                        alt={item.alt}
+                        className="wfull h-full object-cover rounded cursor-pointer z-50"
+                        onClick={videoHandler}
+                      />
+                    </a>
                     <img
                       src={play}
                       alt={item.alt}
@@ -143,13 +145,15 @@ const StudentsStories = () => {
                   className="w-full bg-white p-3 rounded-lg flex items-center gap-3"
                 >
                   <div className="w-20 h-20 relative">
-                    <img
-                      loading="lazy"
-                      src={item.image}
-                      alt={item.alt}
-                      className="w-20 h-20 object-cover rounded cursor-pointer"
-                      onClick={videoHandler}
-                    />
+                    <a href="#videoPlayer">
+                      <img
+                        loading="lazy"
+                        src={item.image}
+                        alt={item.alt}
+                        className="w-20 h-20 object-cover rounded cursor-pointer"
+                        onClick={videoHandler}
+                      />
+                    </a>
                     <img
                       src={play}
                       alt={item.alt}
@@ -172,11 +176,12 @@ const StudentsStories = () => {
         </div>
 
         {/* video */}
-        <div className="bg-blue-100 w-full rounded-lg overflow-hidden relative">
+        <div className="bg-blue-100 w-full h-[220px] lg:h-[345px] rounded-lg overflow-hidden relative">
           <video
+            id="videoPlayer"
             ref={videoRef}
             src={video}
-            className="w-full h-full object-cover"
+            className="w-full h-full lg:h-[344px] object-cover"
             controls
             poster={videoPoster}
             onClick={() => setFlag(false)}
