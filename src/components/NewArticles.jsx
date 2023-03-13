@@ -68,7 +68,7 @@ const NewArticles = () => {
       </div>
 
       {/* body New article row1 */}
-      <div className="flex flex-col xl:flex-row gap-5 items-center mb-5">
+      <div className="flex flex-col xl:flex-row gap-5 items-center xl:justify-center mb-5">
         {rowOne.map((item) => {
           return (
             <div
@@ -120,7 +120,7 @@ const NewArticles = () => {
       </div>
 
       {/* body New article row2 */}
-      <div className="flex flex-col xl:flex-row gap-5 items-center mb-5">
+      <div className="flex flex-col xl:flex-row gap-5 items-center xl:justify-center mb-5">
         {rowTow.map((item) => {
           return (
             <div
