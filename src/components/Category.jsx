@@ -3,7 +3,7 @@ import uxResearcher from "../assets/images/uxResearcher.jpg";
 import userInterface from "../assets/images/userInterface.jpg";
 import userExperience from "../assets/images/userExperience.jpg";
 import webDesign from "../assets/images/webDesign.jpg";
-import backendDeveloper from "../assets/images/backendDeveloper.jpg";
+import backendDeveloper from "../assets/images/graphic.png";
 import dataScience from "../assets/images/dataScience.jpg";
 import graphicDesign from "../assets/images/graphicDesign.jpg";
 import contentWritting from "../assets/images/contentWritting.jpg";
